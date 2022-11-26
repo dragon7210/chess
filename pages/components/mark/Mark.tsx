@@ -1,9 +1,13 @@
 import Image from "next/image";
 
-const Mark = () => {
+const Mark = ({ color }: any) => {
   return (
     <div className="flex">
-      <p className="font-[Gilroy] text-[18px] font-[700] mt-[3px]">CHESS</p>
+      <p
+        className={`font-[Gilroy] text-[18px] font-[700] mt-[3px] text-[${color}]`}
+      >
+        CHESS
+      </p>
       <Image
         className="mx-[6px]"
         src="/icon/chess.png"
@@ -11,7 +15,11 @@ const Mark = () => {
         width={32}
         height={32}
       />
-      <p className="font-[Gilroy] text-[18px] font-[700] mt-[3px]">GAMES</p>
+      <p
+        className={`font-[Gilroy] text-[18px] font-[700] mt-[3px] text-[${color}]`}
+      >
+        GAMES
+      </p>
     </div>
   );
 };
