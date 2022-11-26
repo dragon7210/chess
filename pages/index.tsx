@@ -11,7 +11,7 @@ export default function Home() {
         <p className="font-[Gilroy] text-[46px] font-[700]">
           Welcome to Chess Games
         </p>
-        <p className="font-[Gilroy] text-[16px] text-[#717171] mt-[6px]">
+        <p className="font-[GilroyLight] text-[16px] text-[#717171] mt-[6px]">
           Sign in with your wallet to be able to authenticate and play games
         </p>
         <div className="mt-[60px]">
@@ -22,7 +22,7 @@ export default function Home() {
               width={26}
               height={24}
             />
-            <p className="ml-[47px] font-[Gilroy] text-[18px] text-[white] font-[600] mr-[53px]">
+            <p className="ml-[47px] font-[GilroyLight] text-[18px] text-[white] font-[600] mr-[53px]">
               Sign in with metamask
             </p>
           </button>
@@ -35,14 +35,14 @@ export default function Home() {
               width={26}
               height={24}
             />
-            <p className="ml-[25px] font-[Gilroy] text-[18px] text-[black] font-[600] mr-[29px]">
+            <p className="ml-[25px] font-[GilroyLight] text-[18px] text-[black] font-[600] mr-[29px]">
               Sign in with Coinbase Wallet
             </p>
           </button>
         </div>
         <div className="mt-[35px]">
           <button>
-            <p className="font-[Gilroy] text-[18px] text-[black] font-[600]">
+            <p className="font-[GilroyLight] text-[18px] text-[black] font-[600]">
               <u>Show more options</u>
             </p>
           </button>
