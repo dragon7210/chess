@@ -1,15 +1,11 @@
-type Props = {
-  names: any;
-};
+import TabItem from "./TabItem";
 
-const Tabs: React.FC<Props> = ({ names }) => {
+const Tabs = ({ availablegames }: any) => {
   return (
-    <div className="flex">
-      {names.map((name: string, index: number) => (
-        <div key={index}>
-          <p>{name}</p>
-        </div>
-      ))}
+    <div className="flex mt-[31px] ml-[100px]">
+      {availablegames.map((element: string, index: number) => {
+        return <TabItem key={index} name={element} />;
+      })}
     </div>
   );
 };
