@@ -1,4 +1,7 @@
+import { useRouter } from "next/router";
+
 const AvailableTable = ({ tableData }: any) => {
+  const router = useRouter();
   return (
     <div className="mx-[100px] bg-[#FBFBFB] px-[40px] py-[26px]">
       <table className="w-[100%] table-fixed">
@@ -55,14 +58,20 @@ const AvailableTable = ({ tableData }: any) => {
                   </p>
                 </td>
                 <td>
-                  <button className="bg-[#438FFE] rounded-[8px] w-[123px]">
+                  <button
+                    className="bg-[#438FFE] rounded-[8px] w-[123px]"
+                    onClick={() => router.push("/joinGame")}
+                  >
                     <p className="text-[white] font-[600] text-[12px] font-[GilroyLight] py-[10px] px-[20px]">
                       Request to join
                     </p>
                   </button>
                 </td>
                 <td>
-                  <button className="rounded-[8px] border-2 border-[#438FFE] w-[123px]">
+                  <button
+                    className="rounded-[8px] border-2 border-[#438FFE] w-[123px]"
+                    onClick={() => router.push("/spectating")}
+                  >
                     <p className="text-[#438FFE] font-[600] text-[12px] font-[GilroyLight] py-[10px] px-[20px]">
                       Spectate
                     </p>
